@@ -349,6 +349,10 @@ function saveData() {
   var dataString = JSON.stringify(data);
 
   try {
+    dataSetName = dataSetName.replace(/&/g, '&amp;') //Remove HTML tags from dataset name
+            .replace(/"/g, '&quot;') //https://stackoverflow.com/a/20403618
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
     localStorage.setItem(dataSetName, dataString);
   } catch (e) {
     if(e.name === "QuotaExceededError") {
@@ -411,8 +415,8 @@ function noscroll(y) {
 
 document.addEventListener("keydown", function(event) {
   var popup = document.getElementById("popup-div");
-  if(event.keyCode === 8 && popup) { //Delete key
-    var elements = document.querySelectorAll(".popupItem");
+  if((event.keyCode === 8 || event.keyCode === 46) && popup) { //Delete or backspace key pressed when popup is open, check for deletion of popup item
+    var elements = document.querySelectorAll(".popup-item");
     for(var i = 0; i < elements.length; i++) {
       var coords = elements[i].getBoundingClientRect();
       if(mouseX >= coords.left && mouseX <= coords.right && mouseY >= coords.top && mouseY <= coords.bottom) { // (0, 0) is top left corner
@@ -425,6 +429,9 @@ document.addEventListener("keydown", function(event) {
         break;
       }
     };
+  } else if(event.keyCode === 27 && popup) { //Escape key pressed when popup is open, exit popup
+    document.body.removeChild(popup);
+    document.removeEventListener('scroll', scrollBindedFunction);
   }
 });
 

@@ -27,7 +27,7 @@
   </head>
 
   <body>
-    <a class = "github-fork-ribbon" href = "https://github.com/bchay/stratify" data-ribbon = "View me on GitHub" title = "View me on GitHub">View me on GitHub</a>
+    <a class = "github-fork-ribbon" href = "https://github.com/bchay/Stratify" data-ribbon = "View me on GitHub" title = "View me on GitHub">View me on GitHub</a>
 
     <main>
 
@@ -36,6 +36,18 @@
       </div>
 
       <img src = "graph.jpg" alt = "Graph"/> <!--  https://pixabay.com/en/business-background-blue-corporate-2089533/ -->
+
+      <div id = "instructions">
+        <p>
+          Welcome to Stratify. Enter data into the spreadsheet below. Once it is entered, the fields for "Response Variable" and "Stratify" will become populated with the first row of data. The entirety of the column designated as the response variable must be numeric. You may choose an optional column with which to stratify the data. Select the minimum sample size. If you designated stratification, this value may be different than the actual sample size due to the necessity of choosing samples that accurately represent the popupation. You may also select the number of samples to draw at one time. Any rows that contain a blank cell will be ignored. This does not include cells that are part of an entirely blank column. After sampling, histograms for the mean of each individual sample and the values for all drawn data points will be shown. You can also view each piece of data that has been selected in the table below. Each sample is separated by a blank row.
+        </p>
+        <p>
+          If you choose to save your data, hit the save button and name your dataset. If the provided name is already in use, the old data will be overrided with the newer data. To delete a single entry, hit the "Load Data" button and hover over the dataset that you want to delete. Then, press the delete button. If you clear your cache or cookies, all saved data may be deleted. There is a 10MB maximum size for all stored data.
+        </p>
+        <p>
+          To get started, enter data into the spreadsheet and hit "Sample".
+        </p>
+      </div>
 
       <div id = "spreadsheet"></div>
 

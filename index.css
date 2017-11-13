@@ -190,3 +190,8 @@ ul {
 li {
   list-style-position: outside;
 }
+
+#instructions {
+  text-align: center;
+  margin: 5% 10%;
+}
