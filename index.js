@@ -115,7 +115,7 @@ function sample() {
     allSamples = allSamples.concat(currentSampleArray);
 }
 
-  populateClusterTable();
+  populateClusterizeTable();
   prepareAllSamplesHistogramData();
   prepareMeanSamplesHistogramData();
   logStatistics();
@@ -203,7 +203,7 @@ function drawHistogram(element, responseVariableData, title) {
   chart.draw(responseVariableData, options);
 }
 
-function populateClusterTable() {
+function populateClusterizeTable() {
   var allSamplesData = [];
   var header = document.getElementById("all-samples-header");
   var clusterizeDiv = document.getElementById("content-area");

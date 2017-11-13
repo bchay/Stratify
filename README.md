@@ -1,6 +1,6 @@
 # Stratify
 
-[[https://bchay.github.io/Stratify/Site-Screenshot.png|alt=Screenshot]]
+![Screenshot](https://bchay.github.io/Stratify/Site-Screenshot.png)
 
 This is a project created for an AP Statistics teacher at my High School. It allows a user to input data that can then be sampled using stratification sampling.
 
@@ -13,10 +13,10 @@ You can use this program by going to [Stratify](https://github.com/bchay/stratif
 
 ## Built With
 
-* [HandsOnTable]() - Editable spreadsheet
-* [Google Charts]() - Displays Histograms
+* [Handsontable](https://handsontable.com/) - Editable spreadsheet
+* [Google Charts](https://developers.google.com/chart/) - Displays Histograms
 * [Clusterize](https://clusterize.js.org/) - Used for displaying table of sampled data
-* [JStat]() - Used to calculate statistics
+* [JStat](https://github.com/jstat/jstat) - Used to calculate statistics
 
 ## Authors
 
