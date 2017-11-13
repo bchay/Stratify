@@ -93,7 +93,6 @@ label {
 
 input, select {
   width: 5%;
-  height: 20px;
   margin-bottom: 3%;
 }
 
@@ -119,6 +118,7 @@ button:hover {
 
 #histogram-samples, #histogram-mean {
   margin-top: 5%;
+  width: 100%;
 }
 
 a.github-fork-ribbon::before {
@@ -194,4 +194,73 @@ li {
 #instructions {
   text-align: center;
   margin: 5% 10%;
+}
+
+@media(max-width: 1625px) {
+  body {
+    font-size: 1em;
+  }
+
+  button {
+    width: 20%;
+    font-size: 1em;
+  }
+
+  label {
+    font-size: .8em;
+    min-width: 20%;
+  }
+
+  input, select {
+    width: 10%;
+  }
+
+  #inputs {
+    width: 70%;
+  }
+}
+
+@media(max-width: 1200px) {
+  #inputs {
+    width: 80%;
+  }
+
+  label {
+    min-width: 20%;
+  }
+}
+
+@media(max-width: 950px) {
+  #inputs {
+    width: 95%;
+  }
+
+  label {
+    min-width: 50%;
+  }
+
+  button {
+    width: 30%;
+  }
+
+  #spreadsheet {
+    max-width: 90%;
+  }
+
+  #clusterize-table {
+    max-width: 90%;
+  }
+
+  #heading-bar {
+    height: 20%;
+    font-size: .7em;
+  }
+}
+
+@media(max-width: 550px) {
+  button {
+    display: block;
+    margin: 20px auto;
+    width: 70%;
+  }
 }
