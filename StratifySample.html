@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Stratify Data</title>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/handsontable/0.34.5/handsontable.full.min.js"></script>
+    <script src = "index.js"></script>
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/clusterize.js/0.17.6/clusterize.min.js"></script>
+    <script src = "https://www.gstatic.com/charts/loader.js"></script>
+    <script src = "https://cdn.jsdelivr.net/npm/jstat@latest/dist/jstat.min.js"></script>
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/handsontable/0.34.5/handsontable.full.min.css">
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clusterize.js/0.17.6/clusterize.css" />
+    <link rel = "stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+
+    <link rel = "apple-touch-icon" sizes = "180x180" href = "./apple-touch-icon.png"> <!-- https://pixabay.com/p-297122/?no_redirect -->
+    <link rel = "icon" type = "image/png" sizes = "32x32" href = "./favicon-32x32.png"> <!-- https://realfavicongenerator.net/ -->
+    <link rel = "icon" type = "image/png" sizes = "16x16" href = "./favicon-16x16.png">
+    <link rel = "manifest" href = "./manifest.json">
+    <link rel = "mask-icon" href = "./safari-pinned-tab.svg" color = "#5bbad5">
+    <meta name = "theme-color" content = "#ffffff">
+  </head>
+
+  <body>
+    <a class = "github-fork-ribbon" href = "https://github.com/bchay/stratify" data-ribbon = "View me on GitHub" title = "View me on GitHub">View me on GitHub</a>
+
+    <main>
+
+      <div id = "heading-bar">
+        <h1>Stratified Sampling</h1>
+      </div>
+
+      <img src = "graph.jpg" /> <!--  https://pixabay.com/en/business-background-blue-corporate-2089533/ -->
+
+      <div id = "spreadsheet"></div>
+
+      <div id = "buttons">
+        <button onclick = "sample()">Sample</button>
+        <button onclick = "reset()">Reset Samples</button>
+        <br>
+        <button onclick = "loadData()">Load Data</button>
+        <button onclick = "saveData()">Save Data</button>
+      </div>
+
+      <div id = "inputs">
+        <div>
+          <label for = "variable-list">Response Variable:</label>
+          <select id = "variable-list"></select>
+        </div>
+
+        <div>
+          <label for = "stratify">Stratify:</label>
+          <select id = "stratify"></select>
+        </div>
+
+        <div>
+          <label for = "sample-size">Minimum Sample Size:</label>
+          <input type = "number" id = "sample-size" value = 10 min />
+        </div>
+
+        <div>
+          <label for = "num-samples">Number of Samples:</label>
+          <input type = "number" id = "num-samples" value = 1 />
+        </div>
+
+        <div>
+          <label for = "bin-size">Bin Size:</label>
+          <input type = "input" id = "bin-size" value = "auto"/>
+        </div>
+    </div>
+
+      <p id = "statistics">
+        <div id = "number-of-samples"></div>
+        <div id = "mean"></div>
+        <div id = "standard-deviation"></div>
+      </p>
+
+      <div id = "histogram-mean"></div>
+      <div id = "histogram-samples"></div>
+      <div id = "scatterplot"></div>
+
+      <div class = "clusterize">
+        <div id = "scroll-area" class = "clusterize-scroll">
+          <table id = "clusterize-table">
+            <thead>
+              <tr id = "all-samples-header"> <!-- th tags will be dynamically added -->
+              </tr>
+            </thead>
+            <tbody id = "content-area" class = "clusterize-content">
+              <tr class = "clusterize-no-data">
+                <td>Data</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+  </main>
+  </body>
+</html>

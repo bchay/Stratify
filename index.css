@@ -1,0 +1,193 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #CEE9F1;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.2em;
+}
+
+#heading-bar {
+  width: 100%;
+  height: 15%;
+  text-align: center;
+  background: #5B7ED2;
+  font-size: 1.3em;
+  color: #333;
+
+  box-shadow: 0px 10px 50px 3px black;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/ */
+  text-shadow: 0px 3px 0px #a9b7bb, 0px 14px 10px rgba(0, 0, 0, 0.15), 0px 24px 2px rgba(0, 0, 0, .1), 0px 34px 30px rgba(0, 0, 0, 0.2); /* https://stackoverflow.com/a/19714440 */
+}
+
+img {
+  width: 100vw;
+  max-height: 80vh;
+}
+
+main {
+  text-align: center;
+  display: block;
+  height: 100%;
+}
+
+#spreadsheet {
+  max-width: 70%;
+  max-height: 500px;
+  min-width: 300px;
+  min-height: 200px;
+  width: fit-content;
+  height: fit-content;
+  overflow-y: scroll;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+#clusterize-table {
+  border-collapse: collapse;
+  max-width: 70%;
+  display: block;
+  overflow: auto;
+  margin: 0 auto;
+  background-color: white;
+  display: none;
+  width: fit-content;
+  margin-top: 5%;
+}
+
+#clusterize-table  td, #clusterize-table th {
+  border: 2px solid #999;
+  padding: 1rem;
+  text-align: left;
+  width: 200px;
+}
+
+#clusterize-table tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+#clusterize-table  tr {
+  height: 60px;
+}
+
+#all-samples-header {
+  background-color: lightgray;
+}
+
+.clusterize-scroll {
+  max-height: 600px;
+}
+
+label {
+  min-width: 30%;
+  display: inline-block;
+  text-align: left;
+}
+
+input, select {
+  width: 5%;
+  height: 20px;
+  margin-bottom: 3%;
+}
+
+select {
+  width: fit-content;
+  min-width: 5%;
+}
+
+button {
+  width: 15%;
+  height: 8%;
+  font-size: 1.5em;
+  background-color: #6FB5D9;
+  border-radius: 10px;
+  margin: 3% 2%;
+  box-shadow: 3px 3px 15px black;
+}
+
+button:hover {
+  box-shadow: inset -1px -1px 10px  black;
+  cursor: pointer;
+}
+
+#histogram-samples, #histogram-mean {
+  margin-top: 5%;
+}
+
+a.github-fork-ribbon::before {
+  background-color: black;
+}
+
+#inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: right;
+
+  margin: 0 auto;
+  width: 60%;
+  background-color: lightblue;
+  border: 2px solid black;
+  box-shadow: 10px 10px 40px 1px black;
+
+  padding: 5% 0;
+  margin-bottom: 3%;
+}
+
+#inputs div {
+  width: 100%;
+}
+
+#popup-div {
+  background-color: gray;
+  width: 50%;
+  height: 50%;
+  position: fixed;
+  z-index: 1;
+  border: 2px solid black;
+
+  top: 30%;
+  left: 50%;
+  margin-top: -10%;
+  margin-left: -25%;
+  text-align: center;
+
+  overflow: scroll;
+  box-shadow: 10px 10px 40px 5px black;
+}
+
+.saved-data-list {
+  margin: 0;
+}
+
+.popup-item {
+  cursor: pointer;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.popup-item:hover {
+  background-color: lightgray;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+#close-popup {
+  text-align: right;
+  font-size: 3em;
+  margin-right: 3%;
+  cursor: pointer;
+}
+
+li {
+  list-style-position: outside;
+}
