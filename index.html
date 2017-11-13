@@ -1,6 +1,10 @@
 <!DOCTYPE HTML>
 <html>
   <head>
+    <meta charset = "UTF-8">
+    <meta name = "description" content = "A website that allows a user to perform a stratification sample on inputted data.">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+
     <title>Stratify Data</title>
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/handsontable/0.34.5/handsontable.full.min.js"></script>
     <script src = "index.js"></script>
@@ -31,7 +35,7 @@
         <h1>Stratified Sampling</h1>
       </div>
 
-      <img src = "graph.jpg" /> <!--  https://pixabay.com/en/business-background-blue-corporate-2089533/ -->
+      <img src = "graph.jpg" alt = "Graph"/> <!--  https://pixabay.com/en/business-background-blue-corporate-2089533/ -->
 
       <div id = "spreadsheet"></div>
 
@@ -56,17 +60,17 @@
 
         <div>
           <label for = "sample-size">Minimum Sample Size:</label>
-          <input type = "number" id = "sample-size" value = 10 min />
+          <input type = "number" id = "sample-size" value = 10>
         </div>
 
         <div>
           <label for = "num-samples">Number of Samples:</label>
-          <input type = "number" id = "num-samples" value = 1 />
+          <input type = "number" id = "num-samples" value = 1>
         </div>
 
         <div>
           <label for = "bin-size">Bin Size:</label>
-          <input type = "input" id = "bin-size" value = "auto"/>
+          <input type = "text" id = "bin-size" value = "auto">
         </div>
     </div>
 

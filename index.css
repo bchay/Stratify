@@ -129,7 +129,6 @@ a.github-fork-ribbon::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: right;
 
   margin: 0 auto;
   width: 60%;
