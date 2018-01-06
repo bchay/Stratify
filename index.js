@@ -386,8 +386,8 @@ function loadData() {
   });
 
 
-  for(var key in localStorage) {
-    var item = document.getElementById("saved-data-list").insertAdjacentHTML("beforeend", "<li class = 'popup-item'>" + key + "</li>");
+  for (var i = 0; i < localStorage.length; i++) {
+    document.getElementById("saved-data-list").insertAdjacentHTML("beforeend", "<li class = 'popup-item'>" + localStorage.key(i) + "</li>");
   }
 
   scrollBindedFunction = noscroll.bind(this, document.documentElement.scrollTop);
