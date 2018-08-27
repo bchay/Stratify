@@ -1,6 +1,6 @@
 # Stratify
 
-![Screenshot](https://bchay.github.io/Stratify/Site-Screenshot.png)
+![Screenshot](https://bchay.github.io/Stratify/images/Site-Screenshot.png)
 
 This project allows a user to input data that can then be sampled using stratified sampling. Random samples can be drawn from the population, and users can stratify the data based upon a particular variable.
 
