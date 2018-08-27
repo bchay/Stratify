@@ -28,7 +28,7 @@ body, html {
 }
 
 img {
-  width: 100vw;
+  width: 99vw;
   max-height: 80vh;
 }
 
@@ -45,7 +45,6 @@ main {
   min-height: 200px;
   width: fit-content;
   height: fit-content;
-  overflow-y: scroll;
   margin: 0 auto;
   margin-top: 5%;
 }
@@ -119,10 +118,6 @@ button:hover {
 #histogram-samples, #histogram-mean {
   margin-top: 5%;
   width: 100%;
-}
-
-a.github-fork-ribbon::before {
-  background-color: black;
 }
 
 #inputs {
@@ -203,12 +198,12 @@ li {
 
   button {
     width: 20%;
-    font-size: 1em;
+    font-size: 1.5em;
   }
 
   label {
-    font-size: .8em;
-    min-width: 20%;
+    font-size: 1em;
+    min-width: 25%;
   }
 
   input, select {
