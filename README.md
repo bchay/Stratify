@@ -9,4 +9,4 @@ Data can be entered into the spreadsheet. Then, you are able to select the respo
 
 ### Installing
 
-You can use this program by going to [Stratify](bchay.github.io/Stratify), or running your own version of the code. For the latter option, either clone the repository or download and unzip the code. Simply click the green button that says "Clone or download". Open the index.html file.
+You can use this program by going to [Stratify](https://bchay.github.io/Stratify), or running your own version of the code. For the latter option, either clone the repository or download and unzip the code. Simply click the green button that says "Clone or download". Open the index.html file.
